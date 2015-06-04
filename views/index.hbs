@@ -1,26 +1,48 @@
-<h1 class='hero'>{{ t "index.hero"  }}</h1>
-<h2 class='subtitle'>{{ t "index.subtitle" }} {{ location }}</h2>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="row">
+			<div class="image-wrap">
+				<h1 class='hero'>{{ t "index.hero"  }}</h1>
+				<h2 class='subtitle'>{{ t "index.subtitle" }} {{ location }}</h2>
+			</div>
+			<div class="wind-status">
+				{{t wind.status.term}}
+			</div>
+		</div>
 
-<div class="row wind-info">
-
-	<p class="wind-status">
-		{{t wind.status.term}}
-	</p>
-
-	<div class="compass">
-		<span class="bearing-indicator" data-bearing='{{wind.bearing}}'></span>
-		<span class="speed-indicator">{{ formatNumber wind.speed "0,0.0"}}</span>
+		<p class="image-copyright">Image courtesy <a href='http://publiclab.org/' target='_blank'>publiclab.org</a></p>
 	</div>
+	
 
-	<div class="wind-data">
-		<p>{{t "index.wind-data.speed" }}: {{ formatNumber wind.speed "0,0.0" }} mph</p>
-		<p>{{t "index.wind-data.from" }} {{t wind.cardinal}}</p>
-		<p class='time-taken'>{{t "index.wind-data.time-taken" }} {{ formatUnixDate wind.timeTaken "h:mm:ss A" }} {{ t "index.wind-data.using"}}
-			<a href='https://developer.forecast.io/' target='_blank'>forecast.io</a>
-		</p>
+	<div class="col-lg-6">
+		
+		<div class="row wind-info">
+
+			<div class='col-xs-5'>
+				<div class="compass">
+					<span class="bearing-indicator" data-bearing='{{wind.bearing}}'></span>
+					<span class="speed-indicator">{{ formatNumber wind.speed "0,0.0"}}</span>
+				</div>
+			</div>
+
+			<div class="wind-data col-xs-7">
+				<p class='speed'>
+					<span class='nobreak'>{{t "index.wind-data.speed" }}:</span>
+					<span class='nobreak'>{{ formatNumber wind.speed "0,0.0" }} mph<span>
+				</p>
+				<p class='direction'>{{t "index.wind-data.from" }} {{t wind.cardinal}}</p>
+				<p class='time-taken'>{{t "index.wind-data.time-taken" }} {{ formatUnixDate wind.timeTaken "h:mm:ss A" }} {{ t "index.wind-data.using"}}
+					<a href='https://developer.forecast.io/' target='_blank'>forecast.io</a>
+				</p>
+			</div>
+
+		</div>
+
+		<div class="row">
+			<a href='/take-action' class='btn btn-primary action-button'>{{ t "index.take_action" }}</a>&nbsp;
+			<a href='/subscribe' class="btn btn-primary action-button">{{ t "index.get_alerts" }}</a>
+		</div>
+		
 	</div>
-
-	<a href='/take-action' class='btn btn-primary action-button'>{{ t "index.take_action" }}</a>&nbsp;
-	<a href='/subscribe' class="btn btn-primary action-button">{{ t "index.get_alerts" }}</a>
-
 </div>
+

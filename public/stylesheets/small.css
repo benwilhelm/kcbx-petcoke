@@ -31,6 +31,7 @@ blockquote {
 	position: fixed;
 	top: 0;
 	left: 0;
+	margin: 0;
 	width: 100%;
 	z-index: 100;
 }
@@ -99,19 +100,6 @@ body.home .navbar.navbar-default .current-condition {
 	font-size: large;
 }
 
-@media only screen and (min-width: 768px) {
-	.navbar-nav {
-		float: right;
-		font-size: medium;
-	}
-
-	.navbar.navbar-default .compass {
-		float: left;
-		border-left: 1px solid #fff;
-		padding-left: 1em;
-	}
-}
-
 .page-title {
 	text-align: center;
 }
@@ -126,35 +114,33 @@ body.home .navbar.navbar-default .current-condition {
 }
 
 .language-selector {
-	float: right;
-	font-weight: bold;
-	margin-top: 1em;
-	margin-right: .5em;
-}
-
-.language-selector a {
 	display: inline-block;
-	padding: .5em 1em;
+	float: right;
+	margin: .5em;
 }
 
 body.home {
-	margin-top: 4em;
+	margin-top: 2em;
 	text-align: center;
 }
 
 body.home .hero {
-	font-size: 3em;
+	color: #fff;
+	font-size: 2em;
 	margin-bottom: 0;
 }
 
 body.home .subtitle {
-	margin-top: .5em;
+	color: #fff;
+	margin: 0;
+	padding: .5em 0;
+	font-size: 18px;
 }
 
 body.home .wind-status {
 	color: #fff;
 	font-size: xx-large;
-	margin: 1em 0;
+	margin: 0;
 	padding: .5em 0;
 }
 
@@ -170,8 +156,23 @@ body.home.wind-level-2 .wind-status {
 	background-color: #A22;
 }
 
+body.home .image-wrap {
+	background: url("../img/AR-712199809.jpg") bottom center no-repeat;
+	background-size: cover;
+	margin: 2em 0 0;
+	padding: 7em 0 0;
+}
+
 body.home .wind-data {
 	font-size: large;
+}
+
+body.home .wind-data .speed {
+	margin-bottom: .5em;
+}
+
+body.home .wind-data .direction {
+	margin-top: .5em;
 }
 
 body.home .wind-data .time-taken {
@@ -182,7 +183,7 @@ body.home .wind-data .time-taken {
 	background: url(/img/compass-ring.png) center center no-repeat;
 	display: block;
 	height: 120px;
-	margin: 0 auto 2em;
+	margin: 1em 1em 2em;
 	position: relative;
 	width: 120px;
 }
@@ -206,17 +207,11 @@ body.home .wind-data .time-taken {
 
 body.home .action-button {
 	font-size: large;
-	/* margin-top: .6em; */
+	display: block;
+	text-align: center;
+	white-space: normal;
+	margin: 0 2em;
 }
-
-	@media screen and (max-width: 400px) {
-		body.home .action-button {
-			display: block;
-			text-align: center;
-			white-space: normal;
-			margin: 0 2em;
-		}
-	}
 
 body.subscribe form.sms-signup {
 	margin: 1em auto;
@@ -263,4 +258,14 @@ body.subscribe form.sms-signup .status.error {
 .footer-nav td {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+
+.image-copyright {
+	font-size: small;
+	text-align: center;
+}
+
+.nobreak {
+	white-space: nowrap;
 }

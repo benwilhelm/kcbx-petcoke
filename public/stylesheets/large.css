@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .navbar-nav {
+    float: right;
+    font-size: medium;
+  }
+
+  .navbar.navbar-default .compass {
+    float: left;
+    border-left: 1px solid #fff;
+    padding-left: 1em;
+  }
+
+  body.home .wind-info {
+    margin-top: 2em;
+  }
+}
+

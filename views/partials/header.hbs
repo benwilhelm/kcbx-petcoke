@@ -9,7 +9,14 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="/">PetcokeAlerts.org</a>
+      {{#if languageIsEnglish}}
+        <a class='btn btn-default language-selector' href="?setLng=es-US">Espa&ntilde;ol</a>
+      {{else}}
+        <a class='btn btn-default language-selector' href="?setLng=en-US">English</a>
+      {{/if}}
     </div>
+
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,10 +55,3 @@
 
 </nav>
 
-<div class="language-selector">
-  {{#if languageIsEnglish}}
-    <a class='btn btn-primary' href="?setLng=es-US">Espa&ntilde;ol</a>
-  {{else}}
-    <a class='btn btn-primary' href="?setLng=en-US">English</a>
-  {{/if}}
-</div>

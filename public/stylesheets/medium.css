@@ -1,0 +1,30 @@
+@media screen and (min-width: 400px) {
+
+  body.home .image-wrap {
+    padding-top: 150px;
+  }
+
+  body.home .hero {
+    font-size: 3em;
+  }
+
+  body.home .subtitle {
+    font-size: 2em;
+  }
+
+  body.home .action-button {
+    font-size: normal;
+    display: inline-block;
+    text-align: center;
+    white-space: normal;
+    margin: 0;
+  }
+
+  body.home .compass {
+    float: right;
+  }
+
+  body.home .wind-data  {
+    text-align: left;
+  }
+}
