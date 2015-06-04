@@ -172,6 +172,15 @@ body.home .image-wrap {
 	padding: 7em 0 0;
 }
 
+.image-wrap h1,
+.image-wrap h2,
+.image-wrap h3,
+.image-wrap h4 {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
 body.home .wind-data {
 	font-size: large;
 }
