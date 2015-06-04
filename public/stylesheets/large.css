@@ -1,5 +1,9 @@
 @media only screen and (min-width: 768px) {
 
+  body {
+    font-size: large;
+  }
+
   .container {
     max-width: 1200px;
   }

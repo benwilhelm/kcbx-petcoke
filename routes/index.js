@@ -17,6 +17,12 @@ router.get('/', function(req, res) {
 });
 
 
+router.get('/about', function(req, res){
+  res.render('about', {
+    bodyClass: 'about',
+  })
+})
+
 router.get('/subscribe', function(req, res){
   res.render('subscribe', {
     bodyClass: 'subscribe'

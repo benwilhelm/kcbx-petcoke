@@ -4,7 +4,15 @@
 }
 
 h1, h2, h3, h4 {
-	color: #000;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	font-weight: normal;
+	margin-top: 1em;
+	padding-bottom: .5em;
+}
+
+strong, dt {
+	color: #333;
 }
 
 p {
@@ -45,6 +53,7 @@ blockquote {
 }
 
 body {
+	color: #666;
 	margin-top: 7em;
 }
 
@@ -101,7 +110,7 @@ body.home .navbar.navbar-default .current-condition {
 }
 
 .page-title {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .prominent {
